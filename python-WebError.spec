@@ -10,11 +10,12 @@ Source0:	http://pypi.python.org/packages/source/W/WebError/%{module}-%{version}.
 # Source0-md5:	84b9990b0baae6fd440b1e60cdd06f9a
 URL:		-
 BuildRequires:	python-devel
+BuildRequires:	python-setuptools
 BuildRequires:	rpm-pythonprov
 # if py_postclean is used
 BuildRequires:	rpmbuild(macros) >= 1.219
 #Requires:		python-libs
-Requires:		python-modules
+Requires:	python-modules
 #BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
